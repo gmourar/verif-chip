@@ -73,7 +73,7 @@ def verif_arqia():
             tabela["ARQIA"] = pd.to_numeric(tabela["ARQIA"], errors="coerce")
             tabela.to_excel("chip_verificado.xlsx" , index= False)
             print("Finalizado ============================================== Finalizado ============================================== Finalizado ========================================== Finalizado ")
-            break
+            
     
 
 
@@ -93,9 +93,9 @@ def verif_vivo():
     nfe =  nav.find_element
     genesis = ("http://genesis.sighra.com.br/login.xhtml") 
     nav.get(genesis)
-    nfe("xpath" , "/html/body/div/div/div/div/div[2]/div/form/div[2]/input").send_keys("gmoura")
+    nfe("xpath" , "/html/body/div/div/div/div/div[2]/div/form/div[2]/input").send_keys("")
     ts(.5)
-    nfe("xpath","/html/body/div/div/div/div/div[2]/div/form/div[3]/input").send_keys("gmourar123")
+    nfe("xpath","/html/body/div/div/div/div/div[2]/div/form/div[3]/input").send_keys("")
     ts(.5)
     nfe("xpath" , "/html/body/div/div/div/div/div[2]/div/form/div[5]/div/input").click()
     ts(.7)
