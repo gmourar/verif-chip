@@ -34,9 +34,9 @@ nav = webdriver.Chrome(options= chrome_options)
 
 def get():
     nav.get(sighramanager)
-    nfe('xpath' , '/html/body/form/table/tbody/tr[1]/td[2]/div/div[2]/table/tbody/tr[1]/td[2]/input').send_keys('gmoura')
+    nfe('xpath' , '/html/body/form/table/tbody/tr[1]/td[2]/div/div[2]/table/tbody/tr[1]/td[2]/input').send_keys('')
     time.sleep(.5)
-    nfe('xpath', '/html/body/form/table/tbody/tr[1]/td[2]/div/div[2]/table/tbody/tr[2]/td[2]/input').send_keys('gmourar123')
+    nfe('xpath', '/html/body/form/table/tbody/tr[1]/td[2]/div/div[2]/table/tbody/tr[2]/td[2]/input').send_keys('')
     
     time.sleep(.5)
     nfe('xpath', '/html/body/form/table/tbody/tr[1]/td[2]/div/div[2]/table/tbody/tr[4]/td/input').click()
